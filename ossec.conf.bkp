@@ -1,0 +1,21 @@
+<ossec_config>
+  <client>
+    <server>
+      <address>MANAGER_IP</address>
+      <port>MANAGER_PORT</port>
+      <protocol>MANAGER_PROTOCOL</protocol>
+    </server>
+    <enrollment>
+      <enabled>yes</enabled>
+      <manager_address>MANAGER_IP</manager_address>
+      <groups>default</groups>
+    </enrollment>
+    <notify_time>60</notify_time>
+    <time-reconnect>120</time-reconnect>
+    <auto_restart>yes</auto_restart>
+    <crypto_method>aes</crypto_method>
+  </client>
+  <wodle name="docker-listener">
+    <disabled>no</disabled>
+  </wodle>
+</ossec_config>
