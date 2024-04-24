@@ -1,9 +1,9 @@
 FROM ubuntu:jammy
 
 LABEL maintainer "rahulosp"
-LABEL version "4.7.0-1"
+LABEL version "4.7.3-1"
 LABEL description "Wazuh Agent"
-ARG AGENT_VERSION="4.7.0-1"
+ARG AGENT_VERSION="4.7.3-1"
 
 COPY entrypoint.sh ossec.conf /
 
