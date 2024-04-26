@@ -21,6 +21,7 @@ services:
       - /var/log/dpkg.log:/var/log/dpkg.log
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
+      - /opt/wazuh-agent-conf/ossec.conf:/var/ossec/etc/ossec.conf:ro
     network_mode: "host"
     #healthcheck:
      #test: "pg_isready --username=postgres && cat /proc/1/cmdline | grep -q '^postgres'"
